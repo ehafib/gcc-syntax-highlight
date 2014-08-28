@@ -5,4 +5,4 @@ gcc-syntax-highlight
 
 my gcc/g++ syntax highlight settings for Vim.
 
-![image](hogehoge)
+![image](http://eha.jp/images/github/syntax.png)
