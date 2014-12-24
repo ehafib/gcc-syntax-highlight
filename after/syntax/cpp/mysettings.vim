@@ -1,0 +1,12 @@
+"C++11 lambda expression
+syn match cCpp11Lambda "\[[^\]]*\]\(\s\|\n\)*\((\|{\)"me=e-1,he=e-1
+hi def link cCpp11Lambda Function
+
+"macro highlight
+syn keyword cMyLoop rep perm
+syn keyword cMyTypedefs lint ldouble vint vlint vdouble vldouble vstring ulint
+syn keyword cMyFunc all chmax chmin uniquenize
+
+hi def link cMyLoop Keyword
+hi def link cMyTypedefs cType
+hi def link cMyFunc Function

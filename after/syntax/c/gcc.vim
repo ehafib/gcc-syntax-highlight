@@ -1,16 +1,11 @@
 "constants
-syn keyword cConstant INF MOD EPS
-syn keyword cConstant LONG_LONG_MAX
 syn keyword cConstant stdin stdout stderr
 
 "%I64d
+syn match cFormat display "%I8[duxXoi]\{1}" contained
+syn match cFormat display "%I16[duxXoi]\{1}" contained
+syn match cFormat display "%I32[duxXoi]\{1}" contained
 syn match cFormat display "%I64[duxXoi]\{1}" contained
-
-"typedef
-syn keyword cType ll
-
-"operator
-syntax match OperatorChar "?\|+\|-\|\*\|;\|:\|,\|<\|>\|&\||\|!\|\~\|%\|=\|\.\|\!"
 
 "-------------------------------
 "built-in functions
@@ -27,4 +22,3 @@ syn keyword cFunction FD_CLR FD_ISSET FD_SET FD_ZERO _Exit _exit _longjmp _setjm
 
 hi def link cBuiltinFunction Function
 hi def link cFunction Function
-hi def link OperatorChar Operator
