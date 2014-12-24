@@ -13,3 +13,4 @@ syn keyword cMyFunc all chmax chmin uniquenize
 hi def link cMyLoop Keyword
 hi def link cMyTypedefs cType
 hi def link cMyFunc Function
+hi def link cCppHelperFunction Function
