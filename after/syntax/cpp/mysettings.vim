@@ -14,3 +14,6 @@ hi def link cMyLoop Keyword
 hi def link cMyTypedefs cType
 hi def link cMyFunc Function
 hi def link cCppHelperFunction Function
+
+syn match FoldMarker /{\{3,}\d*\|}\{3,}/
+hi def link FoldMarker SpellCap
