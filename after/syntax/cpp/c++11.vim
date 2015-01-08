@@ -240,5 +240,6 @@ hi def link cCpp11ProtectedMemberFunction Function
 hi def link cCpp11ProtectedVirtualMemberFunction Function
 hi def link cCpp11PublicPureVirtualMemberFunction Function
 hi def link cCpp11PublicVirtualMemberFunction Function
+hi def link cCpp11PublicStaticMemberFunction Function
 
 hi def link cCpp11Object Keyword

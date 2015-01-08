@@ -159,7 +159,7 @@ syn keyword cCppClassTemplate pair
 syn keyword cCppConstant piecewise_construct
 syn keyword cCppFunctionTemplate forward make_pair move swap
 syn keyword cCppNamespace rel_ops
-syn keyword cCppPublicMemberFunction pair
+"syn keyword cCppPublicMemberFunction pair
 ""valarray
 syn keyword cCppClass gslice slice
 syn keyword cCppClassTemplate gslice_array indirect_array mask_array slice_array valarray
