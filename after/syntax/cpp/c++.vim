@@ -18,7 +18,9 @@ syn keyword cCppPublicMemberFunction begin cbegin cend clear count crbegin crend
 syn keyword cCppClassTemplate priority_queue queue
 syn keyword cCppPublicMemberFunction back empty front pop push size top
 ""set
-syn keyword cCppClassTemplate multiset set
+syn keyword cCppClassTemplate multiset
+syn match cCppClassTemplate "set\{1}[^(]"me=e-1,he=e-1
+syn match cCppClassTemplate "set$"
 syn keyword cCppPublicMemberFunction begin cbegin cend clear count crbegin crend emplace emplace_hint empty end equal_range erase find get_allocator insert key_comp lower_bound max_size rbegin rend size swap upper_bound value_comp
 ""stack
 syn keyword cCppClassTemplate stack
@@ -84,8 +86,10 @@ syn keyword cCppFunctionTemplate adjacent_find all_of any_of binary_search copy 
 syn keyword cCppClassTemplate bitset
 syn keyword cCppFunction applicable
 syn keyword cCppPublicMemberClass reference
-syn keyword cCppPublicMemberFunction any bitset count flip none reset set size test to_string to_ulong
-""chrono(C++11)
+"syn keyword cCppPublicMemberFunction any bitset count flip none reset set size test to_string to_ulong
+syn keyword cCppPublicMemberFunction any bitset count flip none reset size test to_string to_ulong
+syn match cCppPublicMemberFunction "\v(set\()"me=e-1,he=e-1
+""chrono(C++11).
 ""codecvt(C++11)
 ""complex
 syn keyword cCppClassTemplate complex
